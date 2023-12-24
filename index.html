@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>epsilon</title>
+  
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+
+  }
+
+  .container1 {
+    padding: 23px;
+  }
+
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 34px 30px;
+    text-decoration: none;
+    font-size: 22px;
+
+  }
+
+  .active {
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .block-left{
+  width:50%;
+  height:80vh;
+  background:url("img/Meeting-Room-4.jpg");
+  float:left;
+  background: url("img/Meeting-Room-4.jpg");
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.block-right{
+  width:50%;
+  height:80vh;
+  background:url("img/Meeting-Room-4.jpg");
+  float:left;
+  box-shadow: inset 0 0 99999px rgba(0, 120, 255, 0.5);
+
+
+}
+
+  
+
+  .centered {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+  }
+
+  .centered2 {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 17rem;
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  a span.ico{
+  display: none;
+}
+ 
+  @media screen and (max-width: 900px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+      display: none;
+    }
+    .centered2 {
+    z-index: 1;
+    position: inherit;
+    /* position: absolute; */
+    left: 50%;
+    transform: translate(0%,-100%);
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -50px;
+}
+.block-left{
+  
+    margin-top: -50px;
+}
+.block-right{
+  
+      margin-top: -50px;
+
+
+}
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .icon {
+      margin-top: -15px;
+    }
+
+    .centered2 {
+      margin-top: 11rem;
+    }
+
+  }
+ 
+
+
+  @media screen and (max-width: 900px) {
+   
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .icon {
+      margin-top: -15px;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    .topnav.responsive .dropdown {
+      float: none;
+    }
+
+
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .bgg{
+    background: #fff;
+    margin-top: 10rem
+  }
+  .no1{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+  }
+  .heading1{
+    padding: 20px;
+    width: 50%;
+  }
+  .heading2{
+    padding: 20px;
+width: 50%;
+}
+.center{
+  background: black;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  padding: 11px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+
+ 
+}
+h3.hw{
+  position: absolute;
+  z-index: -1;
+  color: #fff;
+  padding:10px;
+}
+.bg-black{
+  background: black;
+  padding: 36px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+@media screen and (max-width: 900px) {
+.no1{
+  flex-direction: column;
+}
+.heading1{
+    padding: 20px;
+    width: 100%;
+  }
+  .heading2{
+    padding: 20px;
+width: 100%;
+}
+a span.ico{
+  display: block;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+
+  }
+  .topnav a{
+    color: black;
+    font-weight: bold;
+  }
+
+}
+</style>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <div class="container1">
+
+        <div class="menu">
+          <img src="./img/1.jpeg" style="width:190px;  margin-top: 16px; margin-left: 30px;" class="logo">
+
+          <a href="javascript:void(0);" style="font-size:36px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+          <a href="#"> <span class="ico"><i class="fas fa-phone"></i></span>My Contact </a>
+          <a href="#"> <span class="ico"><i class="fas fa-building"></i></span>My Contact Find Office</a>
+
+          <a href="#"> <span class="ico"><i class="fas fa-phone-volume"></i></span>My Contact Contact Us</a>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </nav>
+  <section class="container5">
+      <h2 class="centered2">Welcome to Epsilon</h2>
+
+      <div class="block-left"></div>
+<div class="block-right"></div>
+    
+  </section>
+
+   <section class="bgg">
+    <div class="no1">
+      <div class="heading1">
+        <h3 style="font-weight:bold;font-size: 1.6rem;">Who We Are</h3>
+        <ul style="padding:15px">
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+
+        </ul>
+      </div>
+      <div class="heading2">
+        <h3 style="font-weight: bold; font-size: 1.6rem;">What We Do</h3>
+        <ul style="padding:15px">
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id, dolor cumque accusantium dolorum elig</li>
+
+        </ul>
+      </div>
+      
+    </div>
+    <div class="center">
+      <h3 class="hw">Click Here To Know More</h3>
+    </div>
+    
+   </section>
+   <section class="bg-black">
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae.</h2>
+
+   </section>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
